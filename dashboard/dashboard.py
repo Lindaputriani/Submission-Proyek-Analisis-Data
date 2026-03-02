@@ -17,8 +17,8 @@ st.set_page_config(
 # ======================
 @st.cache_data
 def load_data():
-    day_df = pd.read_csv("main_data.csv")
-    hour_df = pd.read_csv("hour_data.csv")
+    day_df = pd.read_csv("dashboard/main_data.csv")
+    hour_df = pd.read_csv("dashboard/hour_data.csv")
 
     day_df['dteday'] = pd.to_datetime(day_df['dteday'])
     hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
